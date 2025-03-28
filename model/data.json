@@ -1,0 +1,18 @@
+{
+    "plants": [
+      { "id": "1", "name": "Spider Plant", "img": "https://www.plantvine.com/plants/Variegated-Spider-Plant-2-800x1000.jpg" },
+      { "id": "2", "name": "Song of India", "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWJ3_OpvM6LEmmniFHPEm-ZviGkFr9o_2Vug&s" },
+      { "id": "3", "name": "ZZ Plant", "img": "https://www.thesill.com/cdn/shop/products/the_sill-variant-white_gloss-zz_plant.jpg?v=1743093985&width=416" }
+    ],
+    "pots": [
+      { "id": "1", "name": "Planta Lemos Balm", "img": "https://glut.co.uk/wp-content/uploads/2022/12/LEMON-TREE-IN-HESSIAN-1.webp" },
+      { "id": "2", "name": "Planta Rosewood", "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbpEagJZt9g-hlCOZ2U1ZfcMsCGdQdL8EfOLz1RqhlFgEFii0WmiWzYAtLOZ69eX4a07c&usqp=CAU" },
+      { "id": "3", "name": "Planta Maroon", "img": "https://vietpot.vn/wp-content/uploads/2024/05/vn-11134207-7r98o-lwn3h1v5f0t56d.jpeg" }
+    ],
+    "combo": [
+      { "id": "1", "name": "Combo Chăm Sóc", "img": "https://product.hstatic.net/1000269461/product/combo_phuc_hoi_sau_tet__7__cb8ef08d09f742f4beda4e569db7215a.png" },
+      { "id": "2", "name": "Combo Lawn Balm", "img": "https://product.hstatic.net/1000269461/product/combo_phuc_hoi_sau_tet__7__cb8ef08d09f742f4beda4e569db7215a.png" },
+      { "id": "3", "name": "Combo Lawn Balm", "img": "https://product.hstatic.net/1000269461/product/combo_phuc_hoi_sau_tet__7__cb8ef08d09f742f4beda4e569db7215a.png" }
+    ]
+  }
+  

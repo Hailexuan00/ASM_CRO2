@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="asm.css">
+    <script>
+        function hienthi(checked) {
+            var khac = document.getElementById("sothich");
+            if (checked) {
+                khac.style.display = ""
+            }
+            else {
+                khac.style.display = "none"
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <img id="anh" src="./Anh/0.JPG">
+    <br>
+    <button onclick="prev()">Prev</button>
+    <button onclick="next()">Next</button>
+
+
+
+    <hr>
+
+
+    <h2>Đăng ký thành viên</h2>
+    <div>
+        <p>
+            <label for="">Mã sinh viên</label>
+            <br>
+            <input type="text " id="msv">
+        </p>
+        <p>
+            <label for="">Họ va tên</label>
+            <br>
+
+            <input type="text " id="name">
+        </p>
+        <p>
+            <label for="">Email</label>
+            <br>
+            <input type="text " id="email">
+        </p>
+        <p>
+            <label for="">Giới tính</label>
+            <label for=""><input type="radio" name="gender">nam</label>
+            <label for=""><input type="radio" name="gender">nu</label>
+
+
+        </p>
+        <p>
+            <label for="">Sở thích</label>
+            <label for=""><input type="checkbox" value="Đọc sach" name="sothich" id="docsach"> Đọc sách</label>
+            <label for=""><input type="checkbox" value="Nghe nhạc" name="sothich" id="nghenhac">Nghe nhạc</label>
+            <label for=""><input type="checkbox" value="Xem phim" name="sothich" id="xemphim"> Xem phim</label>
+            <label for=""><input type="checkbox" value="Đá bóng" name="sothich" id="dabong"> Đá bóng</label>
+            <label for=""><input type="checkbox" value="Ẩm thực" name="sothich" id="amthuc"> Ẩm thực</label>
+            <label for=""><input type="checkbox" value="Khác" name="sothich" id="khac" onclick="hienthi(checked)">
+                Khác</label>
+
+
+        </p>
+        <p id="sothich" style="display: none;">
+            <label for=""> so thich khac</label>
+            <input type="text">
+
+        </p>
+        <p>
+            <label for=""> Quốc tịch</label>
+            <select name="quoctich" id="quoctich">
+                <option value="0"></option>
+                <option value="1">Việt Nam</option>
+                <option value="2">Nga</option>
+                <option value="3">Lào</option>
+                <option value="4">Thái LAn</option>
+                <option value="5">Đức</option>
+            </select>
+
+
+        </p>
+        <p>
+
+            <label for="">Nội dung</label>
+            <br>
+
+            <textarea name="" id="noidung"></textarea>
+        </p>
+        <button onclick="kiemTra()">Login</button>
+    </div>
+    <br>
+
+
+    <h2>BÁN HÀNG</h2>
+    <label for="priceFilter">Mức giá:</label>
+    <select id="priceFilter">
+        <option value="all">Tất cả</option>
+        <option value="below300">Dưới 300</option>
+        <option value="300to600">Từ 300 đến 600</option>
+        <option value="above600">Trên 600</option>
+    </select>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Hàng hóa</th>
+                <th>Đơn giá</th>
+                <th>Số lượng</th>
+                <th>Thành tiền</th>
+            </tr>
+        </thead>
+        <tbody id="productList">
+            <tr data-price="700">
+                <td><label><input type="checkbox"> iPhone 9</label></td>
+                <td>700</td>
+                <td><input type="number" value="0" disabled></td>
+                <td>0</td>
+            </tr>
+            <tr data-price="400">
+                <td><label><input type="checkbox"> Samsung</label></td>
+                <td>400</td>
+                <td><input type="number" value="0" disabled></td>
+                <td>0</td>
+            </tr>
+            <tr data-price="100">
+                <td><label><input type="checkbox"> Nokia</label></td>
+                <td>100</td>
+                <td><input type="number" value="0" disabled></td>
+                <td>0</td>
+            </tr>
+            <tr data-price="450">
+                <td><label><input type="checkbox"> Sony Xperia</label></td>
+                <td>450</td>
+                <td><input type="number" value="0" disabled></td>
+                <td>0</td>
+            </tr>
+            <tr data-price="180">
+                <td><label><input type="checkbox"> Motorola</label></td>
+                <td>180</td>
+                <td><input type="number" value="0" disabled></td>
+                <td>0</td>
+            </tr>
+            <tr data-price="600">
+                <td><label><input type="checkbox"> Oppo</label></td>
+                <td>600</td>
+                <td><input type="number" value="0" disabled></td>
+                <td>0</td>
+            </tr>
+            <tr data-price="90">
+                <td><label><input type="checkbox"> bPhone</label></td>
+                <td>90</td>
+                <td><input type="number" value="0" disabled></td>
+                <td>0</td>
+            </tr>
+        </tbody>
+        <tr>
+            <td>tong</td>
+            <td>0</td>
+        </tr>
+    </table>
+
+
+
+
+
+
+    <script src="./asm.js"></script>
+</body>
+
+</html>
